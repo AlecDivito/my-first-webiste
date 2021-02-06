@@ -1,0 +1,90 @@
+body {
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  margin: 3vw;
+}
+
+h1 {
+  color: #4E92DF;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header * {
+  margin-right: 1rem;
+}
+
+.image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  body {
+    width: 98vw;
+  }
+  header {
+    height: 10vh;
+  }
+  .intro {
+    height: 5vh;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+    width: 98vw;
+  }
+  img {
+    width: 94vw;
+    height: auto;
+  }
+  .left, .right {
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .social {
+    width: 96vw;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  body {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  header {
+    height: 12vh;
+  }
+
+  header p {
+    font-size: 10vh;
+  }
+  
+  img {
+    width: 30vw;
+    height: auto;
+  }
+
+  .intro {
+    height: 12vh;
+  }
+
+  .main {
+    height: 60vw;
+  }
+
+  .social {
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    height: 20vh;
+  }
+}
